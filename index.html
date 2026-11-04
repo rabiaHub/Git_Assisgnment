@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CineVerse - Movie Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+
+  <header>
+
+    <h1>CineVerse</h1>
+
+   
+    <button id="theme-toggle">Toggle Light/Dark Mode</button>
+
+    <p id="opening-status"></p>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#booking">Book Tickets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main id="home">
+
+    
+    <section class="hero">
+
+      <img
+        src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900&h=450&fit=crop"
+        alt="Empty cinema hall with red seats facing a large movie screen"
+      >
+
+      <h2>Your Ultimate Movie Destination</h2>
+
+      <p>
+        Catch the latest blockbusters in stunning picture and sound,
+        on the biggest screens in town.
+      </p>
+
+      <p>
+        From heart-pounding action to quiet indie gems, CineVerse brings
+        every kind of story to life. Grab your popcorn, settle into a
+        reclining seat, and let the show begin.
+      </p>
+
+    </section>
+
+
+  
+    <section id="movies">
+
+      <h2>Now Showing</h2>
+
+      <div class="card-container">
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=400&h=250&fit=crop"
+            alt="Poster style image for Edge of Tomorrow"
+          >
+
+          <h3>Edge of Tomorrow</h3>
+
+
+
+          <p>
+            A gripping sci-fi thriller about time loops and survival.
+            A soldier relives the same brutal battle over and over,
+            gaining new skills with every cycle.
+          </p>
+
+          <p class="price">$9.50</p>
+
+        </article>
+
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=400&h=250&fit=crop"
+            alt="Poster style image for Silent Horizon"
+          >
+
+          <h3>Silent Horizon</h3>
+
+          <p>
+            A mystery drama set in a quiet coastal town.
+            When a local fisherman vanishes, old secrets start to
+            resurface among the townspeople.
+          </p>
+
+          <p class="price">$8.75</p>
+
+        </article>
+
+
+        <article class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=400&h=250&fit=crop"
+            alt="Poster style image for Neon Nights"
+          >
+
+          <h3>Neon Nights</h3>
+
+          <p>
+            An action-packed heist movie set in a futuristic city.
+            A crew of thieves plans one final job before the neon-lit
+            metropolis catches up to them.
+          </p>
+
+          <p class="price">$10.00</p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <section id="about">
+
+      <h2>Why Watch With Us</h2>
+
+      <p>
+        We built CineVerse for people who love the big-screen experience
+        as much as the movies themselves. Every hall is designed for
+        comfort, clarity, and that unmistakable feeling of the lights
+        going down.
+      </p>
+
+      <p id="extra-text">
+        CineVerse also provides a welcoming environment for families,
+        students, and movie lovers. Our goal is to make every visit
+        comfortable and enjoyable, from purchasing your ticket to
+        watching the final scene.
+      </p>
+
+      <button id="read-more-btn">Read More</button>
+
+
+      <ol type="A">
+
+        <li>State-of-the-art digital projection</li>
+
+        <li>Dolby surround sound in every hall</li>
+
+        <li>Comfortable reclining seats</li>
+
+        <li>Online ticket booking with no extra fees</li>
+
+        <li>Snack bar with fresh popcorn and drinks</li>
+
+        <li>Wheelchair accessible seating in all halls</li>
+
+      </ol>
+
+    </section>
+
+
+    <section class="gallery">
+
+      <h2>Inside CineVerse</h2>
+
+      <div class="gallery-container">
+
+        <img
+          src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?w=400&h=280&fit=crop"
+          alt="Rows of red cinema seats in a movie theater"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=400&h=280&fit=crop"
+          alt="Film reel and movie clapperboard on a dark surface"
+        >
+
+        <img
+          src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Bright cinema entrance with ticket booth at night"
+        >
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Weekly Showtimes</h2>
+
+
+      <div class="filter-buttons">
+
+        <button class="filter-btn" data-category="all">
+          All
+        </button>
+
+        <button class="filter-btn" data-category="matinee">
+          Matinee
+        </button>
+
+        <button class="filter-btn" data-category="evening">
+          Evening
+        </button>
+
+      </div>
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Day</th>
+            <th>Matinee</th>
+            <th>Evening</th>
+          </tr>
+
+        </thead>
+
+
+        <tbody>
+
+          <tr class="showtime-row" data-category="matinee">
+
+            <td>Monday - Friday</td>
+
+            <td>2:00 PM</td>
+
+            <td>8:00 PM</td>
+
+          </tr>
+
+
+          <tr class="showtime-row" data-category="evening">
+
+            <td>Saturday</td>
+
+            <td>1:00 PM</td>
+
+            <td>9:00 PM</td>
+
+          </tr>
+
+
+          <tr class="showtime-row" data-category="evening">
+
+            <td>Sunday</td>
+
+            <td>1:00 PM</td>
+
+            <td>7:00 PM</td>
+
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </section>
+
+
+    <section>
+
+      <h2>Choose Your Movie Tickets</h2>
+
+      <ul class="movie-options">
+
+        <li>
+
+          <label>
+
+            <input
+              type="checkbox"
+              class="movie-item"
+              data-price="9.50"
+            >
+
+            Edge of Tomorrow - $9.50
+
+          </label>
+
+        </li>
+
+
+        <li>
+
+          <label>
+
+            <input
+              type="checkbox"
+              class="movie-item"
+              data-price="8.75"
+            >
+
+            Silent Horizon - $8.75
+
+          </label>
+
+        </li>
+
+
+        <li>
+
+          <label>
+
+            <input
+              type="checkbox"
+              class="movie-item"
+              data-price="10.00"
+            >
+
+            Neon Nights - $10.00
+
+          </label>
+
+        </li>
+
+      </ul>
+
+
+      <p id="total">Total: $0.00</p>
+
+    </section>
+
+
+    <section id="booking">
+
+      <h2>Book Your Tickets</h2>
+
+
+      <form id="booking-form">
+
+
+        <label for="name">
+          Full Name:
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        >
+
+
+        <label for="email">
+          Email:
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label for="birth-year">
+          Birth Year:
+        </label>
+
+        <input
+          type="text"
+          id="birth-year"
+          placeholder="e.g. 2002"
+        >
+
+
+        <label for="tickets">
+          Number of Tickets:
+        </label>
+
+        <input
+          type="number"
+          id="tickets"
+          min="1"
+          max="10"
+        >
+
+
+        
+        <div id="field">
+
+          <h3>Preferred Showing</h3>
+
+          <br>
+
+          <input
+            type="radio"
+            id="matinee"
+            name="showtime"
+            value="matinee"
+            checked
+          >
+
+          <label for="matinee">
+            Matinee
+          </label>
+
+
+          <input
+            type="radio"
+            id="evening"
+            name="showtime"
+            value="evening"
+          >
+
+          <label for="evening">
+            Evening
+          </label>
+
+        </div>
+
+
+       
+        <div class="checkbox-line">
+
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+          >
+
+          <label for="newsletter">
+            Notify me about new releases
+          </label>
+
+        </div>
+
+
+        
+        <label for="special-notes">
+          Special Requests:
+        </label>
+
+        <textarea
+          id="special-notes"
+          maxlength="100"
+          placeholder="Enter any special requests..."
+        ></textarea>
+
+
+        
+        <p id="char-count">
+          100 characters remaining
+        </p>
+
+
+        
+        <button type="submit">
+          Confirm Booking
+        </button>
+
+
+      
+        <p id="booking-message"></p>
+
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer id="contact">
+
+    <p>
+      456 Cinema Street, Rawalpindi |
+      (555) 987-6543
+    </p>
+
+    <p>
+      &copy; 2026 CineVerse. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT CONNECTION -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
